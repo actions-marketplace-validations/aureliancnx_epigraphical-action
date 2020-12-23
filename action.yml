@@ -1,0 +1,12 @@
+name: 'Epitech Graphical Requirements'
+description: 'Check if your graphical project works and size <15MB'
+author: 'aureliancnx'
+inputs: 
+  myInput:
+    description: 'Input to use'
+    default: 'world'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.myInput }}
